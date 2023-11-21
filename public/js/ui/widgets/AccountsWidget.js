@@ -36,8 +36,8 @@ class AccountsWidget {
       if (evt.target.closest('span.create-account')) {
         App.getModal('createAccount').open();
       }
-      if (evt.target.closest(li.account)) {
-        this.onSelectAccounts(evt.target.closest('li.account'))
+      if (evt.target.closest('li.account')) {
+        this.onSelectAccount(evt.target.closest('li.account'))
       }
     });
   }

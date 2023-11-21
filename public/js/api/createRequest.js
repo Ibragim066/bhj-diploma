@@ -7,14 +7,14 @@ const createRequest = (options = {}) => {
         const xhr = new XMLHttpRequest()
         let formData = new FormData()
         let sendURL = options.url
-        if (options.method !== "GET") {
+        if (options.method !== 'GET') {
             Object.entries(options.data).forEach(([key, value]) =>
                 formData.append(key, value)
             )
         } else {
             formData = ""
-            if (!sendURL.includes("/account")) {
-                sendURL += "?"
+            if (!sendURL.includes('/account')) {
+                sendURL += '?'
                 Object.entries(options.data).forEach(
                     ([key, value]) => (sendURL += `${key}=${value}&`)
                 )
@@ -27,8 +27,8 @@ const createRequest = (options = {}) => {
         } catch (err) {
             options.callback(err, null)
         }
-        xhr.responseType = "json"
-        xhr.addEventListener("readystatechange", function () {
+        xhr.responseType = 'json'
+        xhr.addEventListener('readystatechange', function () {
             if (xhr.status === 200 && xhr.readyState === xhr.DONE) {
                 options.callback(null, xhr.response)
             }

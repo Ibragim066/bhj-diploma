@@ -23,6 +23,12 @@
       "email": "vladimir@demo.ru",
       "password": "demo",
       "id": "a5uz5owlp1m44jz"
+    },
+    {
+      "name": "Хамзат Оздоев",
+      "email": "hamza@demo.ru",
+      "password": "demo",
+      "id": "a5uz59slp8hp2bf"
     }
   ],
   "accounts": [
@@ -40,11 +46,6 @@
       "name": "Бизнес",
       "user_id": "1",
       "id": "3"
-    },
-    {
-      "name": "drtgrd",
-      "user_id": "a5uz9holp1m2s4n",
-      "id": "a5uz138lp8g2g16"
     }
   ],
   "transactions": [
